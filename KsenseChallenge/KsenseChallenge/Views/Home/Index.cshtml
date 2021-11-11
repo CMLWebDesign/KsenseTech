@@ -1,0 +1,29 @@
+﻿
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="~/Scripts/GetUsers.js"></script>
+
+<div class="container-fluid" id="user-container">
+    @* Selection Box for Users *@
+    <div class="row" style="display:-webkit-inline-box; padding: 2em;">
+        <div class="col-6" style="margin-right: 1em;">          
+                Users:
+                <select id="resultdata" name="resultdata"></select>
+        </div>
+        <div class="col-2 pl-2">
+            @* Search button *@
+            <input type="button" value="Search.." id="btnGet" />
+        </div>
+    </div>
+    @* Table listing all their posts *@
+    <div class="row">
+        <div class="col-12" id="postdata">
+          
+        </div>
+    </div>
+
+</div>
+
